@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>termo</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="word">
+        <input type="text" maxlength="1" oninput="nextLetter(this,0)" onkeydown="previousLetter(event, 0)" class="letter"></input>
+        <input type="text" maxlength="1" oninput="nextLetter(this,1)" onkeydown="previousLetter(event, 1)" class="letter"></input>
+        <input type="text" maxlength="1" oninput="nextLetter(this,2)" onkeydown="previousLetter(event, 2)" class="letter"></input>
+        <input type="text" maxlength="1" oninput="nextLetter(this,3)" onkeydown="previousLetter(event, 3)" class="letter"></input>
+        <input type="text" maxlength="1" oninput="nextLetter(this,4)" onkeydown="previousLetter(event, 4)" class="letter"></input>
+    </div>
+    <div class="word">
+        <input type="text" maxlength="1" oninput="nextLetter(this,0)" onkeydown="previousLetter(event, 0)" class="letter" disabled></input>
+        <input type="text" maxlength="1" oninput="nextLetter(this,1)" onkeydown="previousLetter(event, 1)" class="letter" disabled></input>
+        <input type="text" maxlength="1" oninput="nextLetter(this,2)" onkeydown="previousLetter(event, 2)" class="letter" disabled></input>
+        <input type="text" maxlength="1" oninput="nextLetter(this,3)" onkeydown="previousLetter(event, 3)" class="letter" disabled></input>
+        <input type="text" maxlength="1" oninput="nextLetter(this,4)" onkeydown="previousLetter(event, 4)" class="letter" disabled></input>
+    </div>
+        <div class="word">
+        <input type="text" maxlength="1" oninput="nextLetter(this,0)" onkeydown="previousLetter(event, 0)" class="letter" disabled></input>
+        <input type="text" maxlength="1" oninput="nextLetter(this,1)" onkeydown="previousLetter(event, 1)" class="letter" disabled></input>
+        <input type="text" maxlength="1" oninput="nextLetter(this,2)" onkeydown="previousLetter(event, 2)" class="letter" disabled></input>
+        <input type="text" maxlength="1" oninput="nextLetter(this,3)" onkeydown="previousLetter(event, 3)" class="letter" disabled></input>
+        <input type="text" maxlength="1" oninput="nextLetter(this,4)" onkeydown="previousLetter(event, 4)" class="letter" disabled></input>
+    </div>
+        <div class="word">
+        <input type="text" maxlength="1" oninput="nextLetter(this,0)" onkeydown="previousLetter(event, 0)" class="letter" disabled></input>
+        <input type="text" maxlength="1" oninput="nextLetter(this,1)" onkeydown="previousLetter(event, 1)" class="letter" disabled></input>
+        <input type="text" maxlength="1" oninput="nextLetter(this,2)" onkeydown="previousLetter(event, 2)" class="letter" disabled></input>
+        <input type="text" maxlength="1" oninput="nextLetter(this,3)" onkeydown="previousLetter(event, 3)" class="letter" disabled></input>
+        <input type="text" maxlength="1" oninput="nextLetter(this,4)" onkeydown="previousLetter(event, 4)" class="letter" disabled></input>
+    </div>
+        <div class="word">
+        <input type="text" maxlength="1" oninput="nextLetter(this,0)" onkeydown="previousLetter(event, 0)" class="letter" disabled></input>
+        <input type="text" maxlength="1" oninput="nextLetter(this,1)" onkeydown="previousLetter(event, 1)" class="letter" disabled></input>
+        <input type="text" maxlength="1" oninput="nextLetter(this,2)" onkeydown="previousLetter(event, 2)" class="letter" disabled></input>
+        <input type="text" maxlength="1" oninput="nextLetter(this,3)" onkeydown="previousLetter(event, 3)" class="letter" disabled></input>
+        <input type="text" maxlength="1" oninput="nextLetter(this,4)" onkeydown="previousLetter(event, 4)" class="letter" disabled></input>
+    </div>
+
+    <button onclick="guessWord()" onkeydown="guessWordEnter(event)" class="guessBtn">Guess!</button>
+
+    <div class="modal">
+        <div class="content">
+            <span class="message"></span>
+            <button onclick="switchElement(null, '.modal', null)" class="closeBtn">X</button>
+        </div>
+    </div>
+
+    <div class="alert">
+        <div class="alertContent">
+            <span class="alertMessage"> As palavras devem ter 5 letras </span>
+            <button onclick="switchElement(null, '.alert', null)" class="closeBtn">X</button>
+        </div>
+    </div>
+
+    <script src="./app.js" defer></script>
+</body>
+</html>
