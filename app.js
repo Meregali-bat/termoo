@@ -126,7 +126,7 @@ function guessWord(){
     tentativa++
     
     if(tentativa == 5 && win == false){
-        message = "You lost! You're out of guesses"
+        message = `You lost! You're out of guesses! The secret word was ${wordOfTheDay}`
         switchElement(message, '.modal', '.message');
     }
                     for (let i = 0; i < 5; i++) {
