@@ -4,12 +4,19 @@ const palavrasCincoLetras = [
   "PESAR", "TEMPO", "VIRAR", "FUGIR", "MELAO",
   "DENTE", "CANTO", "NINJA", "JOGAR", "PLANO",
   "GRITO", "FALAR", "ROLAR", "BRISA", "LENTO",
-  "SABER", "RISCO", "NACAO", "LAGOA", "FREIO"
+  "SABER", "RISCO", "NACAO", "LAGOA", "FREIO",
+  "SAUDA", "MUNDO", "BEIJO", "CARRO", "TURMA",
+  "VISTA", "SONHO", "FORCA", "VIDAL", "TREVO",
+  "BOMBA", "MEIOA", "CAIXA", "FOLHA", "RUAIS",
+  "CINZA", "FAZER", "LEITE", "MORTE", "NOITE",
+  "SORTE", "PRAIA", "TERRA", "VIVER", "BRANCO",
+  "CHAVE", "DESTA", "PODER", "FIMOS", "NUVEM",
+  "UNICO", "VERAO", "XIQUE", "ZEBRA", "YACHT"
 ];
 
 
-// let wordOfTheDay = palavrasCincoLetras[Math.floor(Math.random() * palavrasCincoLetras.length)];
-let wordOfTheDay = 'aureo'
+let wordOfTheDay = palavrasCincoLetras[Math.floor(Math.random() * palavrasCincoLetras.length)];
+// let wordOfTheDay = 'aureo'
 let wordOfTheDayArr = breakWord(wordOfTheDay);
 let win = false ;
 let message = '';
